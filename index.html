@@ -28,10 +28,10 @@
                                     </div>
                 <div class="menuList">
                     <ul>
-                        <li>Blog</li>
-                        <li>Community Resource</li>
-                        <li>Documentation</li>
-                        <li>Try it</li>
+                        <li><a target="_blank" href="https://metal3.io/blog/index.html"> Blog</a></li>
+                        <li><a target="_blank" href="https://metal3.io/blog/index.html"> Community Resource</a></li>
+                        <li><a target="_blank" href="https://metal3.io/documentation.html"> Documentation</a></li>
+                        <li><a target="_blank" href="https://metal3.io/blog/index.html"> Try it</a></li>
                     </ul>
                 </div>
                 <div class="searchMode">
@@ -69,17 +69,18 @@
         <div class="container">
             <div class="heroWriting">
                 <h1>Metal-<span style="color: #D9C88D;">Kubed</span></h1>
-                <h2 style="padding: 2rem 0rem;">Unlock the Full Potential of Kubernetes with Metal3</h2>
+                <h2 style="padding: 2rem 0rem;">Unlock the Full Potential of Kubernetes with Metal <sup>3</sup> </h2>
                 <p>We provide a standardized, non-vendor-specific solution that enables the deployment, management, and expansion of bare-metal infrastructure with the same level of flexibility and automation found in a public cloud.</p>
                 <div class="heroBtns">
                     <div class="heroBtn contained">
-                        <a href="">Get Started</a>
+                        <a href="https://metal3.io/try-it.html" target="_blank">Get Started</a>
                     </div>
                     <div class="heroBtn outlined">
-                        <a href="">User Guide</a>
+                        <a href="https://book.metal3.io/introduction.html" target="_blank">User Guide</a>
                     </div>
                 </div>
             </div>
+            <div class="heroImage"></div>
             
         </div>
     </section>
@@ -135,7 +136,7 @@
                 <p>A hub for news, updates, and insights on Metal<sup>3</sup> and its applications, as well as tips and best practices for using the platform.</p>
                 
                 <div class="blogBtn contained">
-                    <a href="">Read More</a>
+                    <a href="https://metal3.io/blog/index.html" target="_blank">Read More</a>
                 </div>
             </div>
             <div class="blogCards">
@@ -143,8 +144,6 @@
                     <div class="briefDetails">
                         <div class="label">
                             <h5>cluster</h5>
-                        </div>
-                        <div class="label">
                             <h5>provider</h5>
                         </div>
                         <div class="topic">
@@ -157,21 +156,22 @@
                         <div class="description">
                             <p>Running on bare metal has both benefits and drawbacks. You can get the best performance possible out of the hardware, but it can also be quite expensive and maybe not necessary for all workloads. Perhaps a hybrid cluster could give you the best of both?</p>
                         </div>
-                        <div class="blogBtn outlined" style="    width: 100%;text-align: center;display: flex;justify-content: center;">
-                            Read More
-                        </div>
+                        <a href="https://metal3.io/blog/index.html" style="
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;"><img src="assets/right-arrow.png" style="height:3rem; width: 3rem;background: none;" alt="">
+                        </a>
+
                     </div>
                 </div>
                 <div class="blogCard">
                     <div class="briefDetails">
                         <div class="label">
                             <h5>pivoting</h5>
-                        </div>
-                        <div class="label">
                             <h5>move</h5>
                         </div>
                         <div class="topic">
-                           <h4>Metal<sup>3</sup>Introduces Pivoting</h4> 
+                           <h4>Metal<sup>3</sup> Introduces Pivoting</h4> 
                         </div>
                         <div class="author-date">
                             <h6>By Kashif Nizam Khan</h6>
@@ -180,21 +180,22 @@
                         <div class="description">
                             <p>Metal<sup>3</sup> project has introduced pivoting in its CI workflow. The motivation for pivoting is to move all the objects from the ephemeral/management cluster to a target cluster. This blog post will briefly introduce the concept of pivoting and the impact it has on the overall CI workflow. </p>
                         </div>
-                        <div class="blogBtn outlined" style="    width: 100%;text-align: center;display: flex;justify-content: center;">
-                            Read More
-                        </div>
+                        <a href="https://metal3.io/blog/2021/05/05/Pivoting.html" style="
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;"><img src="assets/right-arrow.png" style="height:3rem; width: 3rem;background: none;" alt="">
+                        </a>
+
                     </div>
                 </div>
                 <div class="blogCard">
                     <div class="briefDetails">
                         <div class="label">
                             <h5>ipam</h5>
-                        </div>
-                        <div class="label">
                             <h5>metal3</h5>
                         </div>
                         <div class="topic">
-                           <h4>Introducing the Metal<sup>3</sup> IP Address Manager</h4> 
+                           <h4>Introducing the Metal<sup>3 </sup> IP Address Manager</h4> 
                         </div>
                         <div class="author-date">
                             <h6>By Maël Kimmerlin</h6>
@@ -203,9 +204,11 @@
                         <div class="description">
                             <p>As a part of developing the Cluster API Provider Metal3 (CAPM3) v1alpha4 release, the Metal<sup>3</sup>crew introduced a new project: its own IP Address Manager. This blog post will go through the motivations behind such a project, the features that it brings, its use in Metal3 and future work. </p>
                         </div>
-                        <div class="blogBtn outlined" style="    width: 100%;text-align: center;display: flex;justify-content: center;">
-                            Read More
-                        </div>
+                        <a href="https://metal3.io/blog/2021/05/05/Pivoting.html" style="
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;"><img src="assets/right-arrow.png" style="height:3rem; width: 3rem;background: none;" alt="">
+                        </a>
                     </div>
                 </div>
 
@@ -256,15 +259,23 @@
                             Metal<sup>3</sup> can be used alongside other infrastructure management tools, but it is designed to work particularly well with Kubernetes.
                         </p>
                           </div>
+                    <div class="accordion_content">
+                        <p>
+                            Metal<sup>3</sup> can be used alongside other infrastructure management tools, but it is designed to work particularly well with Kubernetes.
+                        </p>
+                          </div>
                         </div>
           </div>
         </div>
 
         <div class="communityBtns">
-            <p>Still have more questions?</p>
-            <div class="communityBtn contained">
-                <a href="">Join our community</a>
-                <span><img src="/assets//dark-mode-arrow-right-icon.png" style="height: 1.8rem;" alt=""></span>
+            <div class="container">
+                <h1 style="width:100%; font-size: 3rem;">Still have more questions?</h1>
+                <div class="communityBtn contained">
+                    <a href="https://metal3.io/community-resources.html">Join our community</a>
+                    <span><img src="/assets//dark-mode-arrow-right-icon.png" style="height: 1.8rem;" alt=""></span>
+                </div>
+
             </div>
         </div>
     </section>

@@ -78,6 +78,20 @@ nav .container{
     /* gap: 10rem; */
 
 }
+.heroImage, .communityImage{
+    width: 45%;
+    height: 45rem;
+    background-color: #D9C88D;
+    border-radius:1rem;
+}
+.heroImage img, .communityImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .8rem;
+
+}
 h1{
     font-size: 4.8rem;
 
@@ -97,6 +111,7 @@ h1{
     border-radius: .8rem;
     background-color: #D9C88D;
 }
+
 .heroBtns, .communityBtn, .blogBtn{
     display: flex;
     gap: 2rem;
@@ -133,7 +148,7 @@ h1{
 .outlined:hover{
     background-color: #D9C88D;
     width: fit-content; background: var(--accent-color);
-    color: black;
+    color: white;
     transition: all ease-in-out .5s;
 }
 .blog{
@@ -144,6 +159,10 @@ h1{
 }
 .blog .container{
     background-color: rgba(217,200,141, .5);
+}
+.label{
+    display: flex;
+    gap: 1rem;
 }
 .blogWriting p{
     padding: 3rem 0rem;
@@ -182,16 +201,16 @@ h1{
 .blogCards .blogCard{
     width: 100%;
     height: 30rem;
-    border: 1px solid white;
-    color: #1B1918;
+    /* border: 1px solid white; */
+    color: white;
     border-radius: .8rem;
-    background-color: #E6E5E5;
+    background-color: #1B1918;
     display: flex;
     justify-content: space-between;
 
 }
 .blogCards .blogCard:hover{
-    scale: 1.01;
+    /* scale: 1.01; */
     border-radius: .8rem;
 
 }
@@ -211,20 +230,35 @@ h1{
     justify-content: space-between
 }
 .blogCard h5{
-    background-color: #1B1918;
+    background-color: #D9C88D;
     width: fit-content;
-    color: #918A88;
+    color: white;
     font-size: 1.4rem;
-    padding: .6rem 2rem;
+    height: 3rem;
+    width: fit-content;
+    padding: 0rem 2rem;
     border-radius: 1rem;
+    display: flex;
+    align-items: center ;
 }
 .blogCard h4{
     font-size:2rem;
 }
+.blogCards .blogBtn{
+    padding: 0.5rem 1.2rem;
+    font-size: 1.4rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blogBtn:hover{
+    color: white
+}
 .author-date{
     display: flex;
     justify-content: space-between;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: lighter;
     color: #9D9795;
 }
@@ -260,6 +294,10 @@ p.description{
     scale: 1.05;
     transition: all ease-in-out .5s;
 }
+.faqs{
+    display: flex;
+    flex-direction: column;
+}
 
 .faqsWriting{
     width: 50%;
@@ -281,6 +319,9 @@ p.description{
   overflow: hidden;
   align-items: center;
 }
+    .accordion_label{
+        width: 98%;
+    }
 .accordion_label,
 .accordion_content {
   padding: 20px 25px;
@@ -296,6 +337,7 @@ p.description{
   justify-content: space-between;
   align-items: center;
   transition: background 0.1s;
+  position: relative;
 }
 .accordion_label:hover {
   background: rgba(0, 0, 0, 0.1);
@@ -332,7 +374,7 @@ p.description{
 .accordion {
     border: 1px solid #D9C88D;
     height: auto;
-    width:50rem;
+    width:90rem;
     border-radius: 1rem;
     overflow: hidden;
     margin-top: 10rem;
@@ -370,6 +412,11 @@ footer p{
 }
 .copyright ul li{
     list-style: none;
+    transition: all ease-in-out .5s;
+}
+.copyright ul li:hover{
+    scale: 1.2;
+    transition: all ease-in-out .5s;
 }
 
 
@@ -421,11 +468,12 @@ footer p{
     }
     .heroImage, .communityImage, .blogSlider{
         width: 100%;
-        height: 20rem;
+        height: 30rem;
     }
     .heroSection, .community, .blog, .whyMetal, .faqs{
         padding: 0rem 0rem;   
     }
+
     .heroBtn, .communityBtn, .blogBtn{
         padding: 1rem 3rem;
     }
@@ -438,6 +486,11 @@ footer p{
     .cards{
         margin-top: 0rem;
     }
+    .card:nth-child(1){
+        display: flex;
+        height: auto;
+        justify-content: flex-end !important;
+    }
     .card{
         width: 100%;
     }
@@ -445,11 +498,17 @@ footer p{
         height: auto ;
         padding: 2rem 0rem;
     }
+    .blogCards{
+        width: 100%;
+    }
     .carouselSlide {
         height: 30rem;
     }
     .carouselContainer{
         width: 100%;
+    }
+    .communityBtn{
+        margin-bottom: 2rem;
     }
     .faq .container{
         display: flex;
@@ -465,10 +524,19 @@ footer p{
     }
     .footerSocial ul{
         display: flex;
+        
         gap: 2rem;
+    }
+    footer{
+        padding: 2rem 0rem;
+    }
+    .footerMain{
+        display: flex;
+        flex-direction: column;
     }
     .footerMain img{
         width: 100%;
+        height: 100%;
     }
     .footerMain ul{
         margin-top: 2rem;
@@ -476,6 +544,17 @@ footer p{
         width: 100%;
         justify-content: space-between;
         font-size: 1.5rem;
+    }
+    .footerMain ul li{
+        margin-bottom: 2rem;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+    .copyright p{
+        margin-top: 2rem;
     }
 
     

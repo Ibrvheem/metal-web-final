@@ -20,16 +20,16 @@ modeIcon.addEventListener('click', function(){
   if (document.body.classList.contains('darkMode')) {
     document.body.classList.remove('darkMode');
     document.body.classList.add('lightMode');
-    modeIcon.innerHTML = '<img src="Images/light-mode-icon.png" width="24px" height="24px" alt="">';
-    searchIcon.innerHTML = '<img src="Images/light-mode-search-icon.png" width="24px" height="24px" alt="">';
-    hamburgerIcon.innerHTML = '<img src="Images/hamburger-light-mode-icon.png" width="24px" height="24px" alt="">';
+    modeIcon.innerHTML = '<img src="assets/light-mode-icon.png" width="24px" height="24px" alt="">';
+    searchIcon.innerHTML = '<img src="assets/light-mode-search-icon.png" width="24px" height="24px" alt="">';
+    hamburgerIcon.innerHTML = '<img src="assets/hamburger-light-mode-icon.png" width="24px" height="24px" alt="">';
 
   } else {
     document.body.classList.remove('lightMode');
     document.body.classList.add('darkMode');
-    modeIcon.innerHTML = '<img src="Images/dark-mode-icon.png" width="24px" height="24px" alt="">';
-    searchIcon.innerHTML = '<img src="Images/dark-mode-search-icon.png" width="24px" height="24px" alt="">';
-    hamburgerIcon.innerHTML = '<img src="Images/hamburger-dark-mode-icon.png" width="24px" height="24px" alt="">';
+    modeIcon.innerHTML = '<img src="assets/dark-mode-icon.png" width="24px" height="24px" alt="">';
+    searchIcon.innerHTML = '<img src="assets/dark-mode-search-icon.png" width="24px" height="24px" alt="">';
+    hamburgerIcon.innerHTML = '<img src="assets/hamburger-dark-mode-icon.png" width="24px" height="24px" alt="">';
 
 
   }
